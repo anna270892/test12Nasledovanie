@@ -14,6 +14,11 @@ public class Book extends Product {
     }
 
     @Override
+    public void use() {
+        System.out.println("Читаем книгу " + name );
+    }
+
+    @Override
     public boolean isTooExpensive() {
         if (price > 10_000) {
             return true;

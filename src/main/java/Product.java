@@ -43,4 +43,9 @@ public class Product {
       public void setPrice(int price) {
             this.price = price;
       }
+
+      //метод который будет просто использваоть наш продукт
+      public void use() {
+            System.out.println("Продукт " + name + " используется");
+      }
 }
