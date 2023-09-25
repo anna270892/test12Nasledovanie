@@ -4,6 +4,14 @@ public class Product {
       protected String name;
       protected int price;
 
+
+      //конструктор
+      public Product(int id, String name, int price) {
+            this.id = id;
+            this.name = name;
+            this.price = price;
+      }
+
       public boolean isTooExpensive() {
             if (price > 1_000_000) {
                   return true;

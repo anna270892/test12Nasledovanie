@@ -4,6 +4,15 @@ public class Book extends Product {
     private int pages;  //количество страниц
     private int publushedYear; //год выпуска
 
+
+    //Конструктор для передачи аргументов для конструктора в Product
+    public Book(int id, String name, int price, String author, int pages) {
+        super(id, name, price); //аргументы для конструктора в Product
+        this.author = author;
+        this.pages = pages;
+        this.publushedYear = publushedYear;
+    }
+
     @Override
     public boolean isTooExpensive() {
         if (price > 10_000) {
